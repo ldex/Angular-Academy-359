@@ -69,6 +69,7 @@ export class ProductService {
   }
 
   resetList() {
+    this.productSubject.next([]);
     this.initProducts();
   }
 }
